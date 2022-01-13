@@ -41,7 +41,7 @@
 <link rel="canonical" href="{{ site.url }}{{ page.url }}">
 
 <title>
-    {% if title %}{{ title }} - {% endif %}{{ site.title }}
+    {{ site.title}}{% if title %} / {{ title }}{% endif %}
 </title>
 
 <!-- Links to information about the author(s) of the document -->
