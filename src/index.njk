@@ -1,23 +1,16 @@
 ---
 layout: base.njk
 title: Blog
+h1: Hello
+subtitle: I'm Jason, a designer & website optimizer in Austin, TX
 ---
 
-<main id="main" class="p-6 md:p-12 lg:p-16 border-t-8 border-gray-200">
-    <div class="max-w-xl">
-        <h1 class="font-bold text-xl mb-2">Eleventy Web Starter <span class="font-light text-gray-500">v{{ pkg.version }}</span></h1>
-        <p>Eleventy Web Starter is a lightweight Eleventy boilerplate utilising esbuild, Tailwind CSS and Post CSS.</p>
-
-        <ul class="md:flex my-4 -mx-2 leading-tight ">
-            <li class="md:flex-auto p-2">
-                <a href="https://github.com/chrissy-dev/eleventy-web-starter/zipball/master/" class="block shadow text-center no-underline p-3 font-semibold bg-ws-blue-500 text-white rounded hover:bg-ws-blue-600">Download (.zip)</a>
-            </li>
-            <li class="md:flex-auto p-2">
-                <a href="https://github.com/chrissy-dev/eleventy-web-starter#features" class="block text-center no-underline text-black p-3 font-semibold rounded border hover:bg-gray-100">Get started</a>
-            </li>
-        </ul>
-
-        <footer class="text-xs text-gray-500 mt-12 border-t border-gray-100 pt-6">
-        </footer>
-    </div>
-</main>
+<h2>Recent projects</h2>
+<article>
+    <a href="#">
+        <h1>Title of article</h1>
+        <p>Excerpt of article goes here.</p>
+        <time class="time" datetime="2018-07-07 16:23:00 -0500" pubdate="pubdate"><del class="modified-time">Published July 07, 2018</del>&ensp;Updated August 24, 2019</time>
+        <svg class="icon-arrow-downright" xmlns="http://www.w3.org/2000/svg" width="8.4" height="8.5" viewBox="0 0 8.4 8.5"><title>icon-arrow-downright</title><path d="M2.3,8.5,0,6.1H4.5L0,1.6,1.6,0,6.1,4.5V0L8.4,2.3V8.5Z"></path></svg>
+    </a>
+</article>
