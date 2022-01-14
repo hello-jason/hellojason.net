@@ -2,5 +2,5 @@
 @import 'utils/_accessibility.css';
 
 a {
-	@apply text-ws-blue-500 underline;
+	@apply text-brand-primary underline;
 }

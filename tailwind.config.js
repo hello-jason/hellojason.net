@@ -3,20 +3,15 @@ module.exports = {
 		fontFamily: {
 			'sans': ['Segoe UI', 'SegoeUI', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
 		},
+		colors: {
+			'brand': {
+				'primary': '#A432F4',
+				'secondary': '#FAAC2C'
+			},
+			'white': '#FFFFFF',
+			'black': '#2F3021'
+		},
 		extend: {
-			colors: {
-				'ws-blue': {
-					100: '#E6F0FF',
-					200: '#BFDAFF',
-					300: '#99C3FF',
-					400: '#4D97FE',
-					500: '#006AFE',
-					600: '#005FE5',
-					700: '#004098',
-					800: '#003072',
-					900: '#00204C',
-				},
-			}
 		},
 	},
 	plugins: [],
