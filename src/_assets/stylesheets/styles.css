@@ -24,6 +24,9 @@
     font-weight: bold;
   }
   h3 {
-
+  }
+  /* Nav */
+  nav a.active {
+    @apply underline;
   }
 }

@@ -19,14 +19,15 @@
             <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet" type="text/css"/>
         </noscript>
     </head>
-    <body class="text-black">
+    <body class="text-black page-{{ title | lower | replace(" ", "-") }}">
         <a href="#main" class="skip-link">Skip to main content</a>
-        <hero>
-        {% include "nav.njk" %}
-        <h1>{{ h1 }}</h1>
-        {% if subtitle %}
-            <p>{{ subtitle }}</p>
-        {% endif %}
+        <div class="bg-brand-primary">
+            {% include "nav.njk" %}
+            <h1>{{ h1 }}</h1>
+            {% if subtitle %}
+                <p>{{ subtitle }}</p>
+            {% endif %}
+        </div>
         <main id="main" class="p-6 md:p-12 lg:p-16">
             {{ content | safe }}
         </main>
