@@ -1,14 +1,29 @@
 @import 'utils/_tailwind.css';
 @import 'utils/_accessibility.css';
 
-a {
-	@apply text-brand-primary underline;
-}
-a[href*="//"]:not([href*="hellojason.net"]) {
-  &::after {
-    content: "\00A0(\2348)";
-    text-decoration: none;
-    display: inline-block;
-    color: inherit;
+@layer base {
+  a {
+    @apply text-brand-primary underline;
+  }
+  a[href*="//"]:not([href*="hellojason.net"]) {
+    &::after {
+      content: "\00A0(\2348)";
+      text-decoration: none;
+      display: inline-block;
+      color: inherit;
+    }
+  }
+  h1 {
+    font-size: 80px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  h3 {
+
   }
 }
