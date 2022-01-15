@@ -24,9 +24,13 @@
     font-weight: bold;
   }
   h3 {
+<<<<<<< HEAD
   }
   /* Nav */
   nav a.active {
     @apply underline;
+=======
+
+>>>>>>> c81dd7592de1e4be95f61eee660b838f38a40d96
   }
 }
