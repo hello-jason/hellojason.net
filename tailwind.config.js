@@ -14,6 +14,8 @@ module.exports = {
 		extend: {
 		},
 	},
-	plugins: [],
+	plugins: [
+		require('@tailwindcss/typography'),
+	],
 	content: ['src/**/*.njk', 'src/**/*.js']
 }
