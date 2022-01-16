@@ -5,13 +5,20 @@ h1: Hello
 subtitle: I'm Jason, a designer & website optimizer in Austin, TX
 ---
 
-<h2 class="text-brand-primary">Recent articles</h2>
-<article>
-    <a href="#">
-        <h1>Title of article</h1>
-        <p>Excerpt of article goes here.</p>
-        <time class="time" datetime="2018-07-07 16:23:00 -0500" pubdate="pubdate"><del class="modified-time">Published July 07, 2018</del>&ensp;Updated August 24, 2019</time>
-        <svg class="icon-arrow-downright" xmlns="http://www.w3.org/2000/svg" width="8.4" height="8.5" viewBox="0 0 8.4 8.5"><title>icon-arrow-downright</title><path d="M2.3,8.5,0,6.1H4.5L0,1.6,1.6,0,6.1,4.5V0L8.4,2.3V8.5Z"></path></svg>
-    </a>
-    <p>This guide is for web developers on Windows who prefer the command line and want to avoid virtual machines. It will provide you a truly native development experience for WordPress on Windows with more-familiar *nix commands. This guide assumes you want Ubuntu as your disto. There are other supported distros to choose from, but you may require other steps or commands not covered here.</p>
-</article>
+<div class="flex">
+    <div class="text-right w-2/5">
+        <h2 class="sticky top-8">Recent articles</h2>
+    </div>
+    <div class="w-3/5">
+        {% for i in range(0, 10) -%}
+            <article class="border p-8 mb-8">
+                <a href="#">
+                    <h1 class="text-xl">How to setup WordPress locally on Windows Subsystem for Linux</h1>
+                    <p>For web developers on Windows who prefer the command line and want to avoid virtual machines.</p>
+                    <time class="time" datetime="2018-07-07 16:23:00 -0500" pubdate="pubdate"><del class="modified-time">Published July 07, 2018</del>&ensp;Updated August 24, 2019</time>
+                    <svg class="icon-arrow-downright" xmlns="http://www.w3.org/2000/svg" width="8.4" height="8.5" viewBox="0 0 8.4 8.5"><title>icon-arrow-downright</title><path d="M2.3,8.5,0,6.1H4.5L0,1.6,1.6,0,6.1,4.5V0L8.4,2.3V8.5Z"></path></svg>
+                </a>
+            </article>
+        {%- endfor %}
+    </div>
+</div>
