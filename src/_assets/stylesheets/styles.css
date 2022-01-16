@@ -8,25 +8,21 @@
   a[href*="//"]:not([href*="hellojason.net"]) {
     &::after {
       content: "\00A0(\2348)";
-      text-decoration: none;
+      @apply no-underline;
       display: inline-block;
       color: inherit;
     }
   }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold;
+    @apply uppercase;
+  }
   h1 {
     font-size: 80px;
-    text-transform: uppercase;
-    font-weight: bold;
   }
   h2 {
     font-size: 24px;
-    text-transform: uppercase;
-    font-weight: bold;
   }
-  h3 {
-    font-weight: bold;
-  }
-  /* Nav */
   nav a.active {
     @apply underline;
   }

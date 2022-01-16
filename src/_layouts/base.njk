@@ -13,11 +13,9 @@
         {% endif %}
 
         <!-- Try and serve Google Fonts in the most efficent way possible -->
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
-        <noscript>
-            <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet" type="text/css"/>
-        </noscript>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet">
     </head>
     <body class="text-black page-{{ title | lower | replace(" ", "-") }}">
         <a href="#main" class="skip-link">Skip to main content</a>
@@ -25,10 +23,10 @@
             {% include "nav.njk" %}
             <h1>{{ h1 }}</h1>
             {% if subtitle %}
-                <p>{{ subtitle }}</p>
+                <p class="lowercase">{{ subtitle }}</p>
             {% endif %}
         </div>
-        <main id="main" class="p-6 md:p-12 lg:p-16">
+        <main id="main" class="container mx-auto py-12">
             {{ content | safe }}
         </main>
     </body>

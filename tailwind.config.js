@@ -1,7 +1,7 @@
 module.exports = {
 	theme: {
 		fontFamily: {
-			'sans': ['Segoe UI', 'SegoeUI', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
+			'sans': ['Montserrat', 'Segoe UI', 'SegoeUI', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
 		},
 		colors: {
 			'brand': {
