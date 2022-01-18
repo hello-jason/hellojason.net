@@ -22,7 +22,7 @@
         <div class="bg-hero-head bg-top bg-center bg-no-repeat min-h-hero-head p-5">
             {% include "nav.njk" %}
             <div class="pt-32">
-                <h1 class="text-hero leading-none tracking-tighter text-center text-white" style="text-shadow: 9px 7px 16px rgba(110 11 179 / 60%);">{{ h1 }}</h1>
+                <h1 class="{% if page.url == site.nav.home %}text-hero{% else %}text-9x1{% endif %} leading-none tracking-tighter text-center text-white" style="text-shadow: 9px 7px 16px rgba(110 11 179 / 60%);">{{ h1 }}</h1>
                 {% if subtitle %}
                     <p class="text-3xl lowercase leading-none text-center text-yellow" style="text-shadow: 3px 2px 4px rgb(110 11 179 / 80%);">{{ subtitle }}</p>
                 {% endif %}
