@@ -5,14 +5,14 @@ h1: Hello
 subtitle: I'm Jason, a designer & website optimizer in Austin, TX
 ---
 
-<div class="flex">
-    <div class="text-right w-2/5">
-        <h2 class="sticky top-8">Recent articles</h2>
+<div class="p-5 md:p-10 grid md:grid-cols-2 mx-auto max-w-7xl">
+    <div class="md:px-5 text-center md:text-right">
+        <h2 class="sticky top-12 uppercase">Recent articles</h2>
     </div>
-    <div class="w-3/5">
+    <div class="md:px-5">
         {% for i in range(0, 10) -%}
             <article>
-                <a class="block relative p-5 mb-8 group border border-primary-400/30 hover:border-primary-400 hover:bg-primary-400/5 transition duration-200" href="#">
+                <a class="block relative p-5 mb-5 group border border-primary-400/30 hover:border-primary-400 hover:bg-primary-400/5 transition duration-200" href="#">
                     <h1 class="text-xl text-primary-400 no-underline group-hover:underline underline-offset-2">How to setup WordPress locally on Windows Subsystem for Linux</h1>
 
                     <p>For web developers on Windows who prefer the command line and want to avoid virtual machines.</p>
