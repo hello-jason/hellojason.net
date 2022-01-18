@@ -15,5 +15,5 @@
   height: auto;
   overflow: visible;
   width: auto;
-  @apply bg-primary p-3 text-white;
+  @apply bg-primary-400 p-3 text-white;
 }
