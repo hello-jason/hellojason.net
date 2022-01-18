@@ -19,7 +19,7 @@
     </head>
     <body class="bg-primary-400 text-black selection:bg-secondary selection:text-white page-{{ title | lower | replace(" ", "-") }}">
         <a href="#main" class="skip-link">Skip to main content</a>
-        <div class="bg-hero-head bg-top bg-center bg-no-repeat min-h-hero-head p-5">
+        <div class="bg-hero-head bg-top bg-center bg-no-repeat p-5 {% if page.url == site.nav.home %}min-h-hero-head{% endif %}">
             {% include "nav.njk" %}
             <div class="pt-32">
                 <h1 class="{% if page.url == site.nav.home %}text-hero{% else %}text-9x1{% endif %} leading-none tracking-tighter text-center text-white uppercase" style="text-shadow: 9px 7px 16px rgba(110 11 179 / 60%);">{{ h1 }}</h1>
