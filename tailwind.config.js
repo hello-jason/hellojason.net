@@ -4,6 +4,7 @@ module.exports = {
 			'sans': ['Montserrat', 'Segoe UI', 'SegoeUI', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
 		},
 		colors: {
+			// Tint generator: https://tailwind-color-palette.netlify.app/
 			'primary': {
 				0: '#EDD6FD', 
 				100: '#DBADFB', 
@@ -22,6 +23,9 @@ module.exports = {
 		extend: {
 		},
 	},
-	plugins: [],
+	plugins: [
+		// https://tailwindcss.com/docs/typography-plugin
+		require('@tailwindcss/typography'),
+	],
 	content: ['src/**/*.njk', 'src/**/*.js']
 }
