@@ -17,9 +17,9 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet">
     </head>
-    <body class="text-black page-{{ title | lower | replace(" ", "-") }}">
+    <body class="text-black selection:bg-secondary selection:text-white page-{{ title | lower | replace(" ", "-") }}">
         <a href="#main" class="skip-link">Skip to main content</a>
-        <div class="bg-brand-primary">
+        <div class="bg-primary">
             {% include "nav.njk" %}
             <h1 class="text-9xl text-center text-white">{{ h1 }}</h1>
             {% if subtitle %}
