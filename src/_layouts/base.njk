@@ -17,18 +17,23 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet">
     </head>
-    <body class="text-black selection:bg-secondary selection:text-white page-{{ title | lower | replace(" ", "-") }}">
+    <body class="bg-primary-400 text-black selection:bg-secondary selection:text-white page-{{ title | lower | replace(" ", "-") }}">
         <a href="#main" class="skip-link">Skip to main content</a>
-        <div class="bg-primary-400">
+        <div class="bg-hero-head bg-top bg-center bg-no-repeat min-h-hero-head p-5">
             {% include "nav.njk" %}
-            <h1 class="text-9xl text-center text-white">{{ h1 }}</h1>
-            {% if subtitle %}
-                <p class="text-2xl lowercase text-center">{{ subtitle }}</p>
-            {% endif %}
+            <div class="pt-32">
+                <h1 class="text-hero leading-none tracking-tighter text-center text-white" style="text-shadow: 9px 7px 16px rgba(110 11 179 / 60%);">{{ h1 }}</h1>
+                {% if subtitle %}
+                    <p class="text-3xl lowercase leading-none text-center text-yellow" style="text-shadow: 3px 2px 4px rgb(110 11 179 / 80%);">{{ subtitle }}</p>
+                {% endif %}
+            </div>
         </div>
-        <main id="main" class="container mx-auto">
+        <main id="main" class="bg-white">
             {{ content | safe }}
         </main>
+        {# <footer class="bg-primary-400"> #}
+        <footer class="bg-hero-feet bg-center bg-no-repeat h-48">
+        </footer>
     </body>
     <script src="/static/app.min.js" defer></script>
 </html>
