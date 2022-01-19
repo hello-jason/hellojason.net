@@ -32,6 +32,14 @@ module.exports = {
 			fontSize: {
 				'hero': '14em',
 			},
+			// Customize the @tailwindcss/typography plugin
+			typography: {
+        DEFAULT: {
+          css: {
+            lineHeight: '1.65',
+          },
+        },
+			},
 		},
 	},
 	plugins: [
