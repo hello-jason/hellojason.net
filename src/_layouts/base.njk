@@ -22,7 +22,7 @@
         <div class="bg-hero-head bg-no-repeat {% if page.url == site.nav.home %}p-8 pb-16 md:min-h-hero-head{% else %}p-8{% endif %} md:p-5 bg-bottom">
             {% include "nav.njk" %}
             <div class="{% if page.url == site.nav.home %}pt-12 md:pt-32 text-center{% else %}pt-12 text-center md:text-left{% endif %}">
-                <h1 class="{% if page.url == site.nav.home %}md:text-9xl lg:text-hero tracking-tighter{% else %}tracking-tight text-4xl lg:text-6xl{% endif %} leading-none text-white uppercase" style="text-shadow: 9px 7px 16px rgba(110 11 179 / 60%);">{{ h1 }}</h1>
+                <h1 class="{% if page.url == site.nav.home %}md:text-9xl lg:text-hero tracking-tighter{% else %}tracking-tight text-4xl lg:text-6xl{% endif %} leading-none text-white uppercase" style="text-shadow: 9px 7px 16px rgba(110 11 179 / 60%);">{% if h1 %}{{ h1 }}{% else %}{{ title }}{% endif %}</h1>
                 {% if subtitle %}
                     <p class="text-lg md:text-3xl lg:text-4xl md:font-thin lowercase leading-none text-center text-yellow" style="text-shadow: 3px 2px 4px rgb(110 11 179 / 80%);">{{ subtitle }}</p>
                 {% endif %}
@@ -41,6 +41,7 @@
                             {% if date_updated %}&emsp;Updated {{ date_updated | formatDate }}{% endif %}
                         </time>
                     </div>
+                    <img src="/static/images/articles/{{ hero_image }}" />
                     {{ content | safe }}
                     <div class="border-t border-primary-800/20 pt-5 mt-5">
                         <a href="{{ site.nav.blog }}">↩ All articles</a>
