@@ -4,8 +4,24 @@ title: Projects
 h1: Projects
 ---
 
-<h2>Case studies</h2>
-
-<h2>WP Engine</h2>
-
-<h2>Websites</h2>
+<div class="p-5 md:p-10 flex mx-auto max-w-6xl">
+    <div class="md:px-5 flex-none w-1/3 text-center md:text-right">
+        <h2 class="sticky top-12 uppercase">Case studies</h2>
+    </div>
+    <div class="md:px-5 flex-none w-2/3">
+        <div class="grid grid-cols-3 gap-2">
+            {# Manage these projects in _data/projectList.json #}
+            {% for project in projectList.caseStudy %}
+            <figure class="">
+                <a class="block relative group" href="{{ project.link }}">
+                    <figcaption class="absolute w-full h-full px-5 pt-14 text-center text-white bg-primary-400/80 transition duration-200 opacity-0 group-hover:opacity-100">
+                        <strong class="text-2xl">{{ project.name }}</strong><br>
+                        <span class="text-sm text-yellow">view case study</span>
+                    </figcaption>
+                    <img src="/static/images/projects/thumbnails/{{ project.image }}" />
+                </a>
+            </figure>
+            {% endfor %}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,40 @@
+{
+  "caseStudy": [
+    {
+      "name" : "WP Engine website",
+      "image": "thumbnail-wpengine-dxp.jpg",
+      "link" : "/link/",
+      "year" : "2018"
+    },
+    {
+      "name" : "Contact Mover app",
+      "image": "thumbnail-contact-mover.jpg",
+      "link" : "/link/",
+      "year" : "2013"
+    },
+    {
+      "name" : "Tool Tracker system",
+      "image": "thumbnail-tool-tracker.jpg",
+      "link" : "/link/",
+      "year" : "2013"
+    },
+    {
+      "name" : "pfsync SaaS",
+      "image": "thumbnail-pfsync.jpg",
+      "link" : "/link/",
+      "year" : "2013"
+    },
+    {
+      "name" : "Email template generator",
+      "image": "thumbnail-email-template-generator.png",
+      "link" : "/link/",
+      "year" : "2017"
+    },
+    {
+      "name" : "make|SHIFT",
+      "image": "thumbnail-makeshift.png",
+      "link" : "/link/",
+      "year" : "2019"
+    }
+  ]
+}
