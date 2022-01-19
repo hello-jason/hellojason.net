@@ -11,7 +11,7 @@ subtitle: I'm Jason, a designer & website optimizer in Austin, TX
         <h2 class="sticky top-12 uppercase">Recent posts</h2>
     </div>
     <div class="md:px-5 md:flex-none md:w-2/3">
-        {% for post in collections.blog %}
+        {% for post in collections.blog | reverse %}
             <article>
                 <a class="block relative p-5 mb-5 group border border-primary-800/20 hover:border-primary-400 hover:bg-primary-400/5 transition duration-200" href="{{ post.url }}">
                     {# Post title #}
