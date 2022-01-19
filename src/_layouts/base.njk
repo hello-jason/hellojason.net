@@ -19,16 +19,16 @@
     </head>
     <body class="bg-primary-400 text-black selection:bg-secondary selection:text-white page-{{ title | lower | replace(" ", "-") }}">
         <a href="#main" class="skip-link">Skip to main content</a>
-        <div class="bg-hero-head bg-no-repeat p-5 {% if page.url == site.nav.home %}min-h-hero-head bg-top{% else %} bg-bottom{% endif %}">
+        <div class="bg-hero-head bg-no-repeat p-5 {% if page.url == site.nav.home %}md:min-h-hero-head bg-top{% else %} bg-bottom{% endif %}">
             {% include "nav.njk" %}
-            <div class="{% if page.url == site.nav.home %}pt-32 text-center{% else %}pt-12 text-left{% endif %}">
+            <div class="{% if page.url == site.nav.home %}pt-12 md:pt-32 text-center{% else %}pt-12 text-center md:text-left{% endif %}">
                 <h1 class="{% if page.url == site.nav.home %}md:text-hero tracking-tighter{% else %}tracking-tight text-9x1{% endif %} leading-none text-white uppercase" style="text-shadow: 9px 7px 16px rgba(110 11 179 / 60%);">{{ h1 }}</h1>
                 {% if subtitle %}
                     <p class="text-lg md:text-4xl md:font-thin lowercase leading-none text-center text-yellow" style="text-shadow: 3px 2px 4px rgb(110 11 179 / 80%);">{{ subtitle }}</p>
                 {% endif %}
             </div>
         </div>
-        <main id="main" class="bg-white">
+        <main id="main" class="bg-white p-4 pt-8 md:p-10">
             {{ content | safe }}
         </main>
         <footer class="bg-hero-feet bg-center bg-no-repeat h-48"></footer>
