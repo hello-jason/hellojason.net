@@ -1,6 +1,7 @@
 const filters = require('./utils/filters.js')
 const transforms = require('./utils/transforms.js')
 const collections = require('./utils/collections.js')
+const { DateTime } = require('luxon');
 
 module.exports = function (eleventyConfig) {
 	// Folders to copy to build dir (See. 1.1)
@@ -23,6 +24,13 @@ module.exports = function (eleventyConfig) {
 
 	// This allows Eleventy to watch for file changes during local development.
 	eleventyConfig.setUseGitIgnore(false);
+
+	// Luxon date formatting filter
+	eleventyConfig.addFilter('formatDate', (dateObj) => {
+    return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat(
+      'MMMM d, yyyy'
+    );
+  });
 
 	return {
 		dir: {

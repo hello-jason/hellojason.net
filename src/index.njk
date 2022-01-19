@@ -11,21 +11,21 @@ subtitle: I'm Jason, a designer & website optimizer in Austin, TX
         <h2 class="sticky top-12 uppercase">Recent posts</h2>
     </div>
     <div class="md:px-5 md:flex-none md:w-2/3">
-        {% for i in range(0, 10) %}
+        {% for post in collections.blog %}
             <article>
-                <a class="block relative p-5 mb-5 group border border-primary-800/20 hover:border-primary-400 hover:bg-primary-400/5 transition duration-200" href="#">
+                <a class="block relative p-5 mb-5 group border border-primary-800/20 hover:border-primary-400 hover:bg-primary-400/5 transition duration-200" href="{{ post.url }}">
                     {# Post title #}
-                    <h1 class="text-2xl text-primary-400 pb-3 no-underline group-hover:underline underline-offset-2">How to setup WordPress locally on Windows Subsystem for Linux</h1>
+                    <h1 class="text-2xl text-primary-400 pb-3 no-underline group-hover:underline underline-offset-2">{{ post.data.title }}</h1>
 
                     {# Excerpt #}
-                    <p class="pb-3">For web developers on Windows who prefer the command line and want to avoid virtual machines.</p>
+                    <p class="pb-3">{{ post.data.excerpt }}</p>
 
                     {# Timestamps #}
-                    <time class="text-sm" datetime="2018-07-07 16:23:00 -0500" pubdate="pubdate">
-                        {# Updated at #}
-                        <del class="opacity-40">Published July 07, 2018</del>
+                    <time class="text-sm" datetime="{{ post.data.date }}" pubdate="pubdate">
                         {# Published at #}
-                        &emsp;Updated August 24, 2019
+                        {% if post.data.date_updated %}<del class="opacity-40">{% endif %}Published {{ post.data.date | formatDate }}{% if post.data.date_updated %}</del>{% endif %}
+                        {# Updated at #}
+                        {% if post.data.date_updated %}&emsp;Updated {{ post.data.date_updated | formatDate }}{% endif %}
                     </time>
 
                     {# Arrow icon #}
