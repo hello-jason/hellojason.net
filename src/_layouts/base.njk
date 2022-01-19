@@ -19,12 +19,12 @@
     </head>
     <body class="bg-primary-400 text-black selection:bg-secondary selection:text-white page-{{ title | lower | replace(" ", "-") }}">
         <a href="#main" class="skip-link">Skip to main content</a>
-        <div class="bg-hero-head bg-top bg-center bg-no-repeat p-5 {% if page.url == site.nav.home %}min-h-hero-head{% endif %}">
+        <div class="bg-hero-head bg-no-repeat p-5 {% if page.url == site.nav.home %}min-h-hero-head bg-top{% else %} bg-bottom{% endif %}">
             {% include "nav.njk" %}
-            <div class="pt-32">
-                <h1 class="{% if page.url == site.nav.home %}text-hero{% else %}text-9x1{% endif %} leading-none tracking-tighter text-center text-white uppercase" style="text-shadow: 9px 7px 16px rgba(110 11 179 / 60%);">{{ h1 }}</h1>
+            <div class="{% if page.url == site.nav.home %}pt-32 text-center{% else %}pt-12 text-left{% endif %}">
+                <h1 class="{% if page.url == site.nav.home %}md:text-hero tracking-tighter{% else %}tracking-tight text-9x1{% endif %} leading-none text-white uppercase" style="text-shadow: 9px 7px 16px rgba(110 11 179 / 60%);">{{ h1 }}</h1>
                 {% if subtitle %}
-                    <p class="text-4xl lowercase leading-none text-center text-yellow font-thin" style="text-shadow: 3px 2px 4px rgb(110 11 179 / 80%);">{{ subtitle }}</p>
+                    <p class="text-lg md:text-4xl md:font-thin lowercase leading-none text-center text-yellow" style="text-shadow: 3px 2px 4px rgb(110 11 179 / 80%);">{{ subtitle }}</p>
                 {% endif %}
             </div>
         </div>
