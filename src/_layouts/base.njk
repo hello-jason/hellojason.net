@@ -17,7 +17,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet">
     </head>
-    <body class="bg-primary-400 text-black selection:bg-secondary selection:text-white page-{{ title | lower | replace(" ", "-") }}">
+    <body class="bg-primary-400 text-black selection:bg-secondary selection:text-white page-{{ title | lower | replace(" ", "-") }} layout-{{ layout }}">
         <a href="#main" class="skip-link">Skip to main content</a>
         <div class="bg-hero-head bg-no-repeat {% if page.url == site.nav.home %}p-8 pb-16 md:min-h-hero-head{% else %}p-8{% endif %} md:p-5 bg-bottom">
             {% include "nav.njk" %}
@@ -30,25 +30,16 @@
         </div>
         <main id="main" class="bg-white p-4 pt-8 md:p-10">
             {% if tags == 'blog' %}
-                <div class="pb-12 md:mx-auto md:max-w-4xl prose">
-                    {# Timestamps #}
-                    <div class="border-b border-primary-800/20 pb-5 mb-5">
-                        {# Timestamps #}
-                        <time class="text-sm" datetime="{{ date }}" pubdate="pubdate">
-                            {# Published at #}
-                            {% if date_updated %}<del class="opacity-40">{% endif %}Published {{ date | formatDate }}{% if date_updated %}</del>{% endif %}
-                            {# Updated at #}
-                            {% if date_updated %}&emsp;Updated {{ date_updated | formatDate }}{% endif %}
-                        </time>
-                    </div>
-                    <img src="/static/images/articles/{{ hero_image }}" />
+                {# Blog template #}
+                {% include "blog.njk" %}
+            {% elif template == 'case-study' %}
+                {# Case study template #}
+                <div class="pb-12 prose bg-primary-400">
                     {{ content | safe }}
-                    <div class="border-t border-primary-800/20 pt-5 mt-5">
-                        <a href="{{ site.nav.blog }}">↩ All articles</a>
-                    </div>
                 </div>
             {% else %}
-            {{ content | safe }}
+                {# Default template #}
+                {{ content | safe }}
             {% endif %}
         </main>
         <footer class="bg-hero-feet bg-center bg-no-repeat h-48"></footer>
