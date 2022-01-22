@@ -2,37 +2,55 @@
 title: The product demo for WordPress and WP Engine
 meta_description: Marketing website overhaul for WP Engine.
 layout: base
-template: case-study
-body_class: case-study
+tags: case-study
 ---
 
-<p><span>Design Lead</span></p>
-<p>WP&nbsp;Engine's new website should serve as the product demo for its own platform and for WordPress, showcasing integrations with 3rd party sales and marketing systems, extendability of the framework, robust content analytics, and ease-of-use for the humans who maintain it all.</p>
+<div class="cs-section bg-primary-100">
+  <div class="cs-content">
+    <h2><span>Design Lead</span></h2>
+    <p>WP&nbsp;Engine's new website should serve as the product demo for its own platform and for WordPress, showcasing integrations with 3rd party sales and marketing systems, extendability of the framework, robust content analytics, and ease-of-use for the humans who maintain it all.</p>
+  </div>
+</div>
 
-section.business-case
-  .content
-    h2.section__title Business case
-    p WP&nbsp;Engine has positioned itself as the first WordPress Digital Experience Platform (DXP), soon before Gartner released its first <a href="https://martechtoday.com/gartner-releases-first-magic-quadrant-report-digital-experience-platforms-209846">magic quadrant for DXP</a> and inline with announcing a <a href="https://wpengine.com/blog/milestone-announcement/">major fundraising event</a> from Silver Lake. This tilts the company upmarket with an enterprise-focused product offering, and entry-level tiers for <abbr title="small and medium businesses">SMBs</abbr> and agencies to set themselves up for growth and scale.
+<div class="cs-section">
+  <div class="cs-content">
+    <h2>Business case</h2>
+    <p>WP&nbsp;Engine has positioned itself as the first WordPress Digital Experience Platform (DXP), soon before Gartner released its first <a href="https://martechtoday.com/gartner-releases-first-magic-quadrant-report-digital-experience-platforms-209846">magic quadrant for DXP</a> and inline with announcing a <a href="https://wpengine.com/blog/milestone-announcement/">major fundraising event</a> from Silver Lake. This tilts the company upmarket with an enterprise-focused product offering, and entry-level tiers for <abbr title="small and medium businesses">SMBs</abbr> and agencies to set themselves up for growth and scale.</p>
+    <p>WP&nbsp;Engine is a challenger in the Adobe Experience Manager, Sitecore, and Acquia space, and it's the only one built on an open-source framework with 37% market share of all websites on the internet&mdash;WordPress. Our new website should be the premier case study of the WP&nbsp;Engine platform, punching through dated misconceptions that WordPress is a meek blogging tool. It should demonstrate a cohesive execution of art and science.</p>
+  </div>
+</div>
 
-    p WP&nbsp;Engine is a challenger in the Adobe Experience Manager, Sitecore, and Acquia space, and it's the only one built on an open-source framework with 37% market share of all websites on the internet&mdash;WordPress. Our new website should be the premier case study of the WP&nbsp;Engine platform, punching through dated misconceptions that WordPress is a meek blogging tool. It should demonstrate a cohesive execution of art and science.
+<div class="cs-section not-prose">
+  <div class="cs-content">
+    <h2>The team</h2>
+    <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4">
+    {# Create team macro #}
+    {% macro team(name, role, image) %}
+      <figure class="p-4">
+        <img class="rounded-full mx-auto" src="/static/images/projects/wpengine-dxp/{{ image }}" />
+        <figcaption class="text-base mt-2">
+          <span class="font-bold">{{ name }}</span><br>
+          <span class="">{{ role }}</span>
+        </figcaption>
+      </figure>
+    {% endmacro %}
 
-section.callout.odd
-  .content
-    h2.section__title The team
-
-    .collaborators
-      = teammate "Mary Ellen Dugan", "Chief Marketing Officer", "wpengine-dxp/dxp-MaryEllenDugan.jpg"
-      = teammate "David Vogelpohl", "VP, Web Strategy", "wpengine-dxp/dxp-DavidVogelpohl.jpg"
-      = teammate "David Fossas", "Sr. Director, Brand", "wpengine-dxp/dxp-DavidFossas.jpg"
-      = teammate "Alan Garcia", "Digital Mktg Mgr", "wpengine-dxp/dxp-AlanGarcia.jpg"
-      = teammate "Ryan Hoover", "Developer, Lead", "wpengine-dxp/dxp-RyanHoover.jpg"
-      = teammate "Zack Rothauser", "Developer", "wpengine-dxp/dxp-ZackRothauser.jpg"
-      = teammate "Christopher Garza", "Developer", "wpengine-dxp/dxp-ChristopherGarza.jpg"
-      = teammate "Killian Hagen", "Copywriter", "wpengine-dxp/dxp-KillianHagen.jpg"
-      = teammate "Elana Weinberg", "Assoc. Creative Director", "wpengine-dxp/dxp-ElanaWeinberg.jpg"
-      = teammate "Jason Cross", "Designer, Lead", "wpengine-dxp/dxp-JasonCross.jpg"
-      = teammate "Stacey Lane", "Designer", "wpengine-dxp/dxp-StaceyLane.jpg"
-      = teammate "Kat Cox", "Copywriter", "wpengine-dxp/dxp-KatCox.jpg"
+    {# Use team macro #}
+    {{ team("Mary Ellen Dugan", "Chief Marketing Officer", "dxp-MaryEllenDugan.jpg") }}
+    {{ team("David Vogelpohl", "VP, Web Strategy", "dxp-DavidVogelpohl.jpg") }}
+    {{ team("David Fossas", "Sr. Director, Brand", "dxp-DavidFossas.jpg") }}
+    {{ team("Alan Garcia", "Digital Mktg Mgr", "dxp-AlanGarcia.jpg") }}
+    {{ team("Ryan Hoover", "Developer, Lead", "dxp-RyanHoover.jpg") }}
+    {{ team("Zack Rothauser", "Developer", "dxp-ZackRothauser.jpg") }}
+    {{ team("Christopher Garza", "Developer", "dxp-ChristopherGarza.jpg") }}
+    {{ team("Killian Hagen", "Copywriter", "dxp-KillianHagen.jpg") }}
+    {{ team("Elana Weinberg", "Assoc. Creative Director", "dxp-ElanaWeinberg.jpg") }}
+    {{ team("Jason Cross", "Designer, Lead", "dxp-JasonCross.jpg") }}
+    {{ team("Stacey Lane", "Designer", "dxp-StaceyLane.jpg") }}
+    {{ team("Kat Cox", "Copywriter", "dxp-KatCox.jpg") }}
+    </div>
+  </div>
+</div>
 
 section.ideation-planning
   .content

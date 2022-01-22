@@ -39,6 +39,7 @@ module.exports = {
         DEFAULT: {
           css: {
             lineHeight: '1.65',
+						maxWidth: 'unset',
 						a: {
 							color: '#A432F4',
 							'&:hover': {

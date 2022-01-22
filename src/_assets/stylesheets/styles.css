@@ -22,4 +22,17 @@
   nav a.active {
     @apply underline;
   }
+  abbr[title] {
+    cursor: help;
+  }
+  /* Case study content */
+  .cs-section {
+    @apply p-4 lg:p-20 text-center lg:text-2xl;
+    h2 {
+      @apply text-5xl mb-8;
+    }
+  }
+  .cs-content {
+    @apply mx-auto max-w-4xl;
+  }
 }

@@ -28,20 +28,22 @@
                 {% endif %}
             </div>
         </div>
-        <main id="main" class="bg-white p-4 pt-8 md:p-10">
-            {% if tags == 'blog' %}
-                {# Blog template #}
+        {% if tags == 'blog' %}
+            {# Blog template #}
+            <main id="main" class="bg-white p-4 pt-8 md:p-10">
                 {% include "blog.njk" %}
-            {% elif template == 'case-study' %}
-                {# Case study template #}
-                <div class="pb-12 prose bg-primary-400">
-                    {{ content | safe }}
-                </div>
-            {% else %}
-                {# Default template #}
+            </main>
+        {% elif tags == 'case-study' %}
+            {# Case study template #}
+            <main id="main" class="bg-white prose">
                 {{ content | safe }}
-            {% endif %}
-        </main>
+            </main>
+        {% else %}
+            {# Default template #}
+            <main id="main" class="bg-white p-4 pt-8 md:p-10">
+                {{ content | safe }}
+            </main>
+        {% endif %}
         <footer class="bg-hero-feet bg-center bg-no-repeat h-48"></footer>
     </body>
     <script src="/static/app.min.js" defer></script>
