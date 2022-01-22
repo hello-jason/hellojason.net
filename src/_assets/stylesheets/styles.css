@@ -48,13 +48,13 @@
   .big-list {
     @apply text-left;
     li {
-      @apply flex bg-[#D5D5D5] mb-4;
+      @apply flex mb-4;
     }
     .number, .text {
       @apply block px-2 py-3 md:px-6 md:py-8;
     }
     .number {
-      @apply w-2/12 md:w-1/12 bg-[#B1B1B1] text-center;
+      @apply w-2/12 md:w-1/12 text-center;
     }
     .text {
       @apply w-10/12 md:w-11/12;
