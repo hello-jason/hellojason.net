@@ -1,3 +1,5 @@
+const { red } = require('tailwindcss/colors');
+
 module.exports = {
 	theme: {
 		fontFamily: {
@@ -37,6 +39,12 @@ module.exports = {
         DEFAULT: {
           css: {
             lineHeight: '1.65',
+						a: {
+							color: '#A432F4',
+							'&:hover': {
+								color: '#210A31',
+							},
+						},
           },
         },
 			},

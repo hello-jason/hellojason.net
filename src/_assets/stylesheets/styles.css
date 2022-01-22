@@ -2,7 +2,7 @@
 @import 'utils/_accessibility.css';
 
 @layer base {
-  a[href*="//"]:not([href*="hellojason.net"])::after {
+  a[href*="//"]:not([href*="hellojason.net"]) {
     &::after {
       content: "\00A0(\2348)";
       @apply no-underline;
