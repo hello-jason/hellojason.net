@@ -27,7 +27,8 @@
   }
   /* Case study content */
   .cs-section {
-    @apply p-8 md:p-16 lg:p-20 text-left md:text-center lg:text-2xl odd:bg-[#f4f7fa];
+    /* odd:bg-[#f4f7fa] */
+    @apply p-8 md:p-16 lg:p-20 text-left md:text-center lg:text-2xl;
     h1 {
       @apply tracking-tight text-3xl md:text-4xl lg:text-6xl md:leading-none mb-0;
     }
