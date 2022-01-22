@@ -1,6 +1,8 @@
 const { red } = require('tailwindcss/colors');
 
 module.exports = {
+	// https://tailwindcss.com/docs/dark-mode#toggling-dark-mode-manually
+	darkMode: 'class',
 	theme: {
 		fontFamily: {
 			'sans': ['Montserrat', 'Segoe UI', 'SegoeUI', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
