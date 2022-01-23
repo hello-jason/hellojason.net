@@ -33,6 +33,9 @@
             {# Case study template #}
             <main id="main" class="bg-white prose">
                 {{ content | safe }}
+                <div class="border-t border-primary-800/20 p-5 mt-5">
+                    ↩ <a href="{{ site.nav.projects }}">All projects</a>
+                </div>
             </main>
         {% else %}
             {# Default template #}
