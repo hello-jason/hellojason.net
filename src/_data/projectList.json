@@ -47,31 +47,31 @@
     {
       "name" : "PHP compatibility checker",
       "image": "thumbnail-wpe-phpcompat.gif",
-      "slug" : "link-goes-here",
+      "slug" : "wpe-php-compatibility-checker",
       "year" : "2017"
     },
     {
       "name" : "Integrated sales chat",
       "image": "thumbnail-wpengine-livechat.jpg",
-      "slug" : "link-goes-here",
+      "slug" : "wpengine-livechat",
       "year" : "2016"
     },
     {
       "name" : "Speed Tool",
       "image": "thumbnail-wpe-speedtool.png",
-      "slug" : "link-goes-here",
+      "slug" : "wpe-speed-tool",
       "year" : "2016"
     },
     {
       "name" : "Velocitize Magazine",
       "image": "thumbnail-velocitize.png",
-      "slug" : "link-goes-here",
+      "slug" : "wpe-velocitize",
       "year" : "2016"
     },
     {
       "name" : "Miscellaneous WPE designs",
       "image": "thumbnail-wpe-misc.jpg",
-      "slug" : "link-goes-here",
+      "slug" : "wpe-misc",
       "year" : "2015&emdash;Present"
     }
   ],
