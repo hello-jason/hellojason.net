@@ -5,7 +5,7 @@ hero_alt: Day the Mustang was purchased
 date: 2015-05-16
 date_updated: 2015-06-25
 tags: blog
-excerpt: I have been restoring a 1967 Mustang Coupe with my father over the years, as time and life allows.
+description: I have been restoring a 1967 Mustang Coupe with my father over the years, as time and life allows.
 ---
 
 I have been restoring a 1967 Mustang Coupe with my father over the years, as time and life allows. This post will be updated as the build progresses.

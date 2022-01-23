@@ -5,7 +5,7 @@ hero_alt: Roots stack for WordPress
 date: 2015-07-12
 date_updated:
 tags: blog
-excerpt: Thanks to the Roots team, WordPress projects finally match my development workflow.
+description: Thanks to the Roots team, WordPress projects finally match my development workflow.
 ---
 
 ## Ignorance is not bliss

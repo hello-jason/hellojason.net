@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        {% if redirect %}<meta http-equiv="refresh" content="0;url={{ redirect }}" />{% endif %}
         {% include "head.njk" %}
         {% if site.env %}
             <!-- capture the CSS content as a Liquid variable -->

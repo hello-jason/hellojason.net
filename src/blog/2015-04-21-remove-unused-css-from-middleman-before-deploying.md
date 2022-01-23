@@ -4,7 +4,7 @@ hero_image: portfolio-before-uncss.jpg
 hero_alt: Before uncss
 date: 2015-04-21
 tags: blog
-excerpt: Remove all unused CSS from your stylesheets, during the build process, before deploying your Middleman site.
+description: Remove all unused CSS from your stylesheets, during the build process, before deploying your Middleman site.
 ---
 
 This guide gives you the ability to build your site, remove unused CSS, minify the CSS, then deploy to a server&mdash;**all with a single command**.

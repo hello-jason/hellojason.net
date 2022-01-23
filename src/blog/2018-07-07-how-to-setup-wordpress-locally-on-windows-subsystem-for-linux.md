@@ -5,7 +5,7 @@ hero_alt: How to setup WordPress locally on Windows Subsystem for Linux
 date: 2018-07-07
 date_updated: 2019-08-24
 tags: blog
-excerpt: For web developers on Windows who prefer the command line and want to avoid virtual machines.
+description: For web developers on Windows who prefer the command line and want to avoid virtual machines.
 ---
 
 ## Who is this for?

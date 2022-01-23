@@ -5,7 +5,7 @@ hero_alt: Headless VirtualBox vm bat file
 date: 2015-07-14
 date_updated:
 tags: blog
-excerpt: I mostly develop on a CentOS VM on a Windows box, so this is how to launch it automatically and silently.
+description: I mostly develop on a CentOS VM on a Windows box, so this is how to launch it automatically and silently.
 ---
 
 ## Virtual machine for development
