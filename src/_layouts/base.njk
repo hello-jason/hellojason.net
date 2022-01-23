@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <script>
+            var host = "hellojason.net";
+            if ((host == window.location.host) && (window.location.protocol != "https:")) {
+                window.location.protocol = "https";
+            }
+        </script>
+        {# Check frontmatter for redirect command #}
         {% if redirect %}<meta http-equiv="refresh" content="0;url={{ redirect }}" />{% endif %}
         {% include "head.njk" %}
         {% if site.env %}
