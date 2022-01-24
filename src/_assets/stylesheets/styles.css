@@ -61,3 +61,7 @@
     }
   }
 }
+
+.prose pre code {
+  @apply text-white;
+}
