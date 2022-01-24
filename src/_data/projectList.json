@@ -151,31 +151,31 @@
     {
       "name" : "Zorb-It",
       "image": "thumbnail-zorbit-packet.jpg",
-      "slug" : "",
+      "slug" : "zorbit",
       "year" : "2012"
     },
     {
       "name" : "Simple Simon Tire",
       "image": "thumbnail-simple-simon.jpg",
-      "slug" : "",
+      "slug" : "simple-simon",
       "year" : "2010"
     },
     {
       "name" : "ServerExec",
       "image": "thumbnail-serverexec.jpg",
-      "slug" : "",
+      "slug" : "server-exec",
       "year" : "2011"
     },
     {
       "name" : "NGSTech Conference",
       "image": "thumbnail-ngs-tech.jpg",
-      "slug" : "",
+      "slug" : "ngstech",
       "year" : "2013"
     },
     {
       "name" : "ISC Constructors",
       "image": "thumbnail-isc.jpg",
-      "slug" : "",
+      "slug" : "isc",
       "year" : "2014"
     }
   ]
