@@ -3,3 +3,4 @@ Sitemap: https://hellojason.net/sitemap.xml
 Disallow: /blog/index.html
 Disallow: /imageoptim.manifest.yml
 Disallow: /CNAME
+Disallow: /404
