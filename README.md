@@ -28,7 +28,7 @@ npm run build
 
 ## Deployment
 
-Automated deploys when merging into master branch via GitHub Actions. This site is being hosted on GitHub Pages by exposting the gh-pages branch to a custom domain.
+Automated deploys when merging into master branch via GitHub Actions. This site is being hosted on GitHub Pages by exposing the gh-pages branch to a custom domain.
 
 ---
 
